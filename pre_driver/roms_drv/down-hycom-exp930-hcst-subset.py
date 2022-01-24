@@ -82,7 +82,9 @@ def main():
                 try_time=try_time-1
                 print(fn+' fetch failed, sleep %ds to try again...' % sleep)
                 time.sleep(sleep)
-
+        if try_time==0:
+            print('Download failed!')
+            exit()
         f = open(fout_dir+'/'+fn, 'wb')
         f.write(rqst.content)
         f.close()

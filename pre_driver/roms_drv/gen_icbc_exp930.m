@@ -26,7 +26,7 @@ domain_str='d01';
 
 % (1) Enter start date (T1) and number of days to get climatology data 
 %T1 = datetime(2021,06,15,12,0,0);
-T1=datetime(2021,09,15,00,0,0);
+T1=datetime(2020,09,29,12,0,0);
 %number of days and frequency to create climatology files for
 %numdays = 3;
 numdays=3;
@@ -36,14 +36,14 @@ dayFrequency = 1;
 %     see http://tds.hycom.org/thredds/catalog.html
 %url = '/users/b145872/project-dir/data/hycom/goni/';
 %url = '/home/lzhenn/array74/Njord_Calypso//drv_field//hycom_subset/'; 
-ocn_ra= '/home/lzhenn/drv_field//hycom_subset/2021091500/';
+ocn_ra= '/home/lzhenn/drv_field//hycom_subset/2020092912/';
 
 % (3) Enter working directory (wdr)
 %wdr = ['/home/metctm1/array/app/COAWST/COAWST_operational/Projects/GBA_operational/ow_icbc/', domain_str];
-wdr = '/home/lzhenn/drv_field//icbc/2021091500/';
+wdr = '/home/lzhenn/drv_field//icbc/2020092912/';
 %roms_swan_grid_dir='/users/b145872/project-dir/app/COAWST-FULL/Projects/GONI/grid/';
 %roms_swan_grid_dir='/home/metctm1/array/app/COAWST/COAWST_operational/Projects/GBA_operational/roms_swan_grid/';
-roms_swan_grid_dir = '/disk/r074/lzhenn/workspace/njord_pipeline/implement/domaindb/njord_9km3km/';
+roms_swan_grid_dir = '/disk/r074/lzhenn/workspace/njord_pipeline/implement/domaindb/njord/';
 
 % (4) Enter path and name of the ROMS grid
 %modelgrid = [roms_swan_grid_dir,'roms_',domain_str,'_lp0d1.nc'];

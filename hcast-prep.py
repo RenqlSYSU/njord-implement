@@ -18,7 +18,7 @@ CWD=sys.path[0]
 def main_run():
     
     # controller config handler
-    cfg_hdl=lib.cfgparser.read_cfg(CWD+'/conf/config.hcast.ini')
+    cfg_hdl=lib.cfgparser.read_cfg(CWD+'/conf/config.hcast.prep.ini')
     
     
     init_ts=datetime.datetime.strptime(
